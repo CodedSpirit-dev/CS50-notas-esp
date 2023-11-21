@@ -1,4 +1,4 @@
-// Become familiar wih C syntax
+// Become familiar with C syntax
 // Learn to debug buggy code
 
 #include <cs50.h>
@@ -6,10 +6,12 @@
 
 int main(void)
 {
-    // Ask for your name and where live
+    // Ask for your name and where you live
     string name = get_string("What is your name? ");
     string location = get_string("Where do you live? ");
 
     // Say hello
-    printf("Hello, %name, from %location!", name, location);
+    printf("Hello, %s, from %s!\n", name, location);
+
+    return 0;
 }
